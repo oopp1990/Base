@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataset xmlns="http://sucsoft.com/DC_DEF"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://sucsoft.com/DC_DEF DC12.xsd"
+         
+  name="entity" namespace="cq.base.entity">
+    
+  <driver name="ORACLE-10G" dialect="ORACLE-10G"/>
+  <url>jdbc:oracle:thin:@172.18.25.5:1521:orcl</url> 
+  <user>sa</user>
+  <passwd>sa</passwd>
+  
+  <class name="LogBean" abstract="false">
+    <class-mapping  table="LogBean" >
+      <id property-name="lid">
+        <generator>native</generator>
+      </id>
+    </class-mapping>
+    <property name="lauthor" type="string">
+      <property-mapping column="lauthor"/>
+    </property>
+    <property name="ltime" type="date">
+      <property-mapping column="lauthor"/>
+    </property>
+    <property name="lbean" type="string">
+      <property-mapping column="lauthor"/>
+    </property>
+    <property name="llevel" type="string">
+      <property-mapping column="lauthor"/>
+    </property>
+    <property name="ltype" type="string">
+      <property-mapping column="lauthor"/>
+    </property>
+  </class>
+</dataset>
